@@ -7,7 +7,7 @@ function ThermostatException(message) {
 
 function Thermostat() {
   this.temperature = 20;
-  this.min = 10;
+  this.minTemperature = 10;
   this.maxTemperatureModeOn = 25;
   this.maxTemperatureModeOff = 32;
   this.powerSavingModeOn = true;
@@ -33,8 +33,8 @@ Thermostat.prototype.up = function() {
 
 
 Thermostat.prototype.down = function() {
-  if(this.temperature - 1  < this.min) {
-    throw new ThermostatException("Can't go below the " + this.min + "temperature")
+  if(this.temperature - 1  < this.minTemperature) {
+    throw new ThermostatException("Can't go below the " + this.minTemperature + "temperature")
   }
   return (this.temperature --);
 };
