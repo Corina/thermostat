@@ -1,0 +1,27 @@
+body {
+  width: 300px;
+  height: 400px;
+}
+
+.btn {
+  background-color: #565151;
+  border: 2px;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+
+.display {
+  background-color: #C9E6DC;
+}
+
+.thermostat-buttons {
+  background-color: #E6DC68;
+}

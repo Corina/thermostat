@@ -6,7 +6,8 @@ function ThermostatException(message) {
 
 
 function Thermostat() {
-  this.temperature = 20;
+  this.defaultTemperature = 20;
+  this.temperature = this.defaultTemperature;
   this.minTemperature = 10;
   this.maxTemperatureModeOn = 25;
   this.maxTemperatureModeOff = 32;
@@ -45,7 +46,7 @@ Thermostat.prototype.switchPowerSavingMode = function() {
 };
 
 Thermostat.prototype.reset = function() {
-  return this.temperature = 20
+  return this.temperature = this.defaultTemperature;
 };
 
 Thermostat.prototype.energyUsage = function() {
